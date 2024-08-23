@@ -2,54 +2,54 @@ import 'package:adv_basics/models/quiz_questions.dart';
 
 const questions = [
   QuizQuestion(
-    'What are the main building blocks of Flutter UIs?',
+    'What is Marco\'s bounty?',
     [
-      'Widget', //first answer in this list of answers is the correct one
-      'Components',
-      'Blocks',
-      'Functions'
+      '\$1,374,000,000', //first answer in this list of answers is the correct one
+      '\$1,245,000,000',
+      '\$1,465,000,000',
+      '\$1,278,000,000'
     ],
   ),
-  QuizQuestion('How are Flutter UIs built?', [
-    'By combining widgets in code',
-    'By combining widgets in a visual editor',
-    'By defining widgets in config files',
-    'By using XCode for iOS and Android Studio for Android',
+  QuizQuestion('Where was the first Road Poneglyph located bt the Strawhats?', [
+    'Inside the giant whale tree',
+    'Tomb of the Kinds',
+    'Tree of Knowledge',
+    'Sea Forest',
   ]),
   QuizQuestion(
-    'What\'s the purpose of a StatefulWidget?',
+    'Who is the first child of Charlotte Linlin?',
     [
-      'Update UI as data changes',
-      'Update data as UI changes',
-      'Ignore data changes',
-      'Render UI that does not depend on data',
+      'Charlotte Perospero',
+      'Charlotte Compote',
+      'Charlotte Daifuku',
+      'Charlotte Oven',
     ],
   ),
   QuizQuestion(
-    'Which widget should you try to use more often: StatelessWidget or StatefulWidget?',
+    'What character has an obsession with Cherry Pies?',
     [
-      'StatelessWidget',
-      'StatefulWidget',
-      'Both are equally good',
-      'None of the above',
+      'Marshall D. Teach',
+      'Catarina Devon',
+      'Avalo Pizarro',
+      'Shiryu of the Rain',
     ],
   ),
   QuizQuestion(
-    'What happens if you change data in a StatelessWidget?',
+    'How old Kureha post time-skip?',
     [
-      'The UI is not updated',
-      'The UI is updated',
-      'The closest StatefulWidget is updated',
-      'Any nested StatefulWidgets are updated',
+      '141',
+      '136',
+      '129',
+      '153',
     ],
   ),
   QuizQuestion(
-    'How should you update data inside of StatefulWidgets?',
+    'What is the name of the dog in Orange Town?',
     [
-      'By calling setState()',
-      'By calling updateData()',
-      'By calling updateUI()',
-      'By calling updateState()',
+      'Chouchou',
+      'Cherie',
+      'Bijoux',
+      'Jolie',
     ],
   ),
 ];

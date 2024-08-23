@@ -45,10 +45,10 @@ class ResultsScreen extends StatelessWidget {
           children: [
             Text(
               'You answered $numCorrectQuestions out of $numTotalQuestion questions correctly!',
-              style: GoogleFonts.lato(
-                color: const Color.fromARGB(255, 230, 200, 253),
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
+              style: GoogleFonts.pirataOne(
+                color: const Color(0xff0B1215),
+                fontSize: 35,
+                fontWeight: FontWeight.normal,
               ),
               textAlign: TextAlign.center,
             ),
@@ -62,7 +62,7 @@ class ResultsScreen extends StatelessWidget {
             TextButton.icon(
               onPressed: onRestart,
               style: TextButton.styleFrom(
-                foregroundColor: Colors.white,
+                foregroundColor: const Color(0xff0B1215),
               ),
               icon: const Icon(Icons.refresh),
               label: const Text('Restart Quiz!'),

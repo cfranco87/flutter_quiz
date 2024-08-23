@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:adv_basics/answer_button.dart';
+import 'package:adv_basics/widget/answer_button.dart';
 import 'package:adv_basics/data/questions.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -31,7 +31,8 @@ class _QuestionScreenState extends State<QuestionScreen> {
     final currentQuestion = questions[currentQuestionIndex];
 
     return SizedBox(
-      width: double.infinity, //special dart code, making it as wide as possible
+      width:
+          double.maxFinite, //special dart code, making it as wide as possible
       child: Container(
         margin: const EdgeInsets.all(40),
         child: Column(
@@ -40,14 +41,14 @@ class _QuestionScreenState extends State<QuestionScreen> {
           children: [
             Text(
               currentQuestion.text,
-              style: GoogleFonts.lato(
-                color: const Color.fromARGB(255, 200, 160, 247),
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
+              style: GoogleFonts.pirataOne(
+                color: Colors.white,
+                fontSize: 60,
+                fontWeight: FontWeight.normal,
               ),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 40),
             ...currentQuestion.getShuffledAnswer().map((answer) {
               //(...)comma seperated answer buttons
               return AnswerButton(

@@ -26,10 +26,10 @@ class SummaryItem extends StatelessWidget {
           children: [
             Text(
               itemData['question'] as String,
-              style: GoogleFonts.lato(
-                color: Colors.white,
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
+              style: GoogleFonts.pirataOne(
+                color: const Color(0xff0B1215),
+                fontSize: 24,
+                fontWeight: FontWeight.normal,
               ),
             ),
             const SizedBox(
@@ -37,11 +37,11 @@ class SummaryItem extends StatelessWidget {
             ),
             Text(itemData['user_answer'] as String,
                 style: const TextStyle(
-                  color: Color.fromARGB(255, 202, 171, 272),
+                  color: Colors.white,
                 )),
             Text(itemData['correct_answer'] as String,
                 style: const TextStyle(
-                  color: Color.fromARGB(255, 181, 254, 246),
+                  color: Color(0xff0B1215),
                 )),
           ],
         )),
